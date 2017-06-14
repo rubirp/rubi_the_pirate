@@ -1,0 +1,7 @@
+$ cat .gitignore
+
+
+*~
+*Makefile
+*.cdt
+*.dsk
