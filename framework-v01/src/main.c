@@ -17,17 +17,9 @@
 //------------------------------------------------------------------------------
 
 #include <cpctelera.h>
+#include "game.h"
 
 void main(void) {
-   u8* pvmem;  // Pointer to video memory
-
-   // Clear Screen
-   cpct_memset(CPCT_VMEM_START, 0, 0x4000);
-
-   // Draw String on the middle of the screen
-   pvmem = cpct_getScreenPtr(CPCT_VMEM_START, 20, 96);
-   cpct_drawStringM1("Welcome to CPCtelera!", pvmem, 1, 0);
-
-   // Loop forever
-   while (1);
+	// Funcion principal del juego que inicializa todo y corre el juego
+	run();
 }

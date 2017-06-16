@@ -3,3 +3,7 @@ $ cat .gitignore
 
 *~
 *Makefile
+
+
+#folders
+*/obj/
