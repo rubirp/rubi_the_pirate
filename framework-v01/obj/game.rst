@@ -13,107 +13,110 @@
                              13 	.globl _cpct_setVideoMode
                              14 	.globl _cpct_scanKeyboard_f
                              15 	.globl _cpct_disableFirmware
-                             16 	.globl _initCPC
-                             17 	.globl _init
-                             18 	.globl _run
-                             19 	.globl _processInput
-                             20 	.globl _update
-                             21 	.globl _draw
-                             22 ;--------------------------------------------------------
-                             23 ; special function registers
-                             24 ;--------------------------------------------------------
+                             16 	.globl _myGame
+                             17 	.globl _initCPC
+                             18 	.globl _init
+                             19 	.globl _run
+                             20 	.globl _processInput
+                             21 	.globl _update
+                             22 	.globl _draw
+                             23 ;--------------------------------------------------------
+                             24 ; special function registers
                              25 ;--------------------------------------------------------
-                             26 ; ram data
-                             27 ;--------------------------------------------------------
-                             28 	.area _DATA
-                             29 ;--------------------------------------------------------
-                             30 ; ram data
-                             31 ;--------------------------------------------------------
-                             32 	.area _INITIALIZED
-                             33 ;--------------------------------------------------------
-                             34 ; absolute external ram data
-                             35 ;--------------------------------------------------------
-                             36 	.area _DABS (ABS)
-                             37 ;--------------------------------------------------------
-                             38 ; global & static initialisations
-                             39 ;--------------------------------------------------------
-                             40 	.area _HOME
-                             41 	.area _GSINIT
-                             42 	.area _GSFINAL
-                             43 	.area _GSINIT
-                             44 ;--------------------------------------------------------
-                             45 ; Home
-                             46 ;--------------------------------------------------------
-                             47 	.area _HOME
-                             48 	.area _HOME
+                             26 ;--------------------------------------------------------
+                             27 ; ram data
+                             28 ;--------------------------------------------------------
+                             29 	.area _DATA
+   0118                      30 _myGame::
+   0118                      31 	.ds 1
+                             32 ;--------------------------------------------------------
+                             33 ; ram data
+                             34 ;--------------------------------------------------------
+                             35 	.area _INITIALIZED
+                             36 ;--------------------------------------------------------
+                             37 ; absolute external ram data
+                             38 ;--------------------------------------------------------
+                             39 	.area _DABS (ABS)
+                             40 ;--------------------------------------------------------
+                             41 ; global & static initialisations
+                             42 ;--------------------------------------------------------
+                             43 	.area _HOME
+                             44 	.area _GSINIT
+                             45 	.area _GSFINAL
+                             46 	.area _GSINIT
+                             47 ;--------------------------------------------------------
+                             48 ; Home
                              49 ;--------------------------------------------------------
-                             50 ; code
-                             51 ;--------------------------------------------------------
-                             52 	.area _CODE
-                             53 ;src/game.c:8: void initCPC(){
-                             54 ;	---------------------------------
-                             55 ; Function initCPC
-                             56 ; ---------------------------------
-   0043                      57 _initCPC::
-                             58 ;src/game.c:9: cpct_disableFirmware();
-   0043 CD 07 01      [17]   59 	call	_cpct_disableFirmware
-                             60 ;src/game.c:10: cpct_setVideoMode(0);
-   0046 2E 00         [ 7]   61 	ld	l,#0x00
-   0048 CD F9 00      [17]   62 	call	_cpct_setVideoMode
-                             63 ;src/game.c:11: cpct_setBorder(HW_BLACK);
-   004B 21 10 14      [10]   64 	ld	hl,#0x1410
-   004E E5            [11]   65 	push	hl
-   004F CD DB 00      [17]   66 	call	_cpct_setPALColour
-                             67 ;src/game.c:13: cpct_setVideoMode(0);
-   0052 2E 00         [ 7]   68 	ld	l,#0x00
-   0054 CD F9 00      [17]   69 	call	_cpct_setVideoMode
-   0057 C9            [10]   70 	ret
-                             71 ;src/game.c:17: void init(){
-                             72 ;	---------------------------------
-                             73 ; Function init
-                             74 ; ---------------------------------
-   0058                      75 _init::
-                             76 ;src/game.c:18: initCPC();
-   0058 C3 43 00      [10]   77 	jp  _initCPC
-                             78 ;src/game.c:21: void run(){
-                             79 ;	---------------------------------
-                             80 ; Function run
-                             81 ; ---------------------------------
-   005B                      82 _run::
-                             83 ;src/game.c:23: init();
-   005B CD 58 00      [17]   84 	call	_init
-                             85 ;src/game.c:26: while(1){
-   005E                      86 00102$:
-                             87 ;src/game.c:28: processInput();
-   005E CD 6C 00      [17]   88 	call	_processInput
-                             89 ;src/game.c:30: update();
-   0061 CD 6F 00      [17]   90 	call	_update
-                             91 ;src/game.c:33: cpct_waitVSYNC();
-   0064 CD F1 00      [17]   92 	call	_cpct_waitVSYNC
-                             93 ;src/game.c:34: draw();
-   0067 CD 70 00      [17]   94 	call	_draw
-   006A 18 F2         [12]   95 	jr	00102$
-                             96 ;src/game.c:43: void processInput(){
-                             97 ;	---------------------------------
-                             98 ; Function processInput
-                             99 ; ---------------------------------
-   006C                     100 _processInput::
-                            101 ;src/game.c:45: cpct_scanKeyboard_f();
-   006C C3 71 00      [10]  102 	jp  _cpct_scanKeyboard_f
-                            103 ;src/game.c:51: void update(){
-                            104 ;	---------------------------------
-                            105 ; Function update
-                            106 ; ---------------------------------
-   006F                     107 _update::
-                            108 ;src/game.c:54: }
-   006F C9            [10]  109 	ret
-                            110 ;src/game.c:56: void draw(){	
-                            111 ;	---------------------------------
-                            112 ; Function draw
-                            113 ; ---------------------------------
-   0070                     114 _draw::
-                            115 ;src/game.c:59: }
-   0070 C9            [10]  116 	ret
-                            117 	.area _CODE
-                            118 	.area _INITIALIZER
-                            119 	.area _CABS (ABS)
+                             50 	.area _HOME
+                             51 	.area _HOME
+                             52 ;--------------------------------------------------------
+                             53 ; code
+                             54 ;--------------------------------------------------------
+                             55 	.area _CODE
+                             56 ;src/game.c:21: void initCPC(){
+                             57 ;	---------------------------------
+                             58 ; Function initCPC
+                             59 ; ---------------------------------
+   0043                      60 _initCPC::
+                             61 ;src/game.c:22: cpct_disableFirmware();
+   0043 CD 07 01      [17]   62 	call	_cpct_disableFirmware
+                             63 ;src/game.c:23: cpct_setVideoMode(0);
+   0046 2E 00         [ 7]   64 	ld	l,#0x00
+   0048 CD F9 00      [17]   65 	call	_cpct_setVideoMode
+                             66 ;src/game.c:24: cpct_setBorder(HW_BLACK);
+   004B 21 10 14      [10]   67 	ld	hl,#0x1410
+   004E E5            [11]   68 	push	hl
+   004F CD DB 00      [17]   69 	call	_cpct_setPALColour
+                             70 ;src/game.c:26: cpct_setVideoMode(0);
+   0052 2E 00         [ 7]   71 	ld	l,#0x00
+   0054 CD F9 00      [17]   72 	call	_cpct_setVideoMode
+   0057 C9            [10]   73 	ret
+                             74 ;src/game.c:34: void init(){
+                             75 ;	---------------------------------
+                             76 ; Function init
+                             77 ; ---------------------------------
+   0058                      78 _init::
+                             79 ;src/game.c:35: initCPC();
+   0058 C3 43 00      [10]   80 	jp  _initCPC
+                             81 ;src/game.c:39: void run(){
+                             82 ;	---------------------------------
+                             83 ; Function run
+                             84 ; ---------------------------------
+   005B                      85 _run::
+                             86 ;src/game.c:41: init();
+   005B CD 58 00      [17]   87 	call	_init
+                             88 ;src/game.c:45: while(1){
+   005E                      89 00104$:
+                             90 ;src/game.c:47: processInput();
+   005E CD 6C 00      [17]   91 	call	_processInput
+                             92 ;src/game.c:49: update();
+   0061 CD 6F 00      [17]   93 	call	_update
+                             94 ;src/game.c:52: cpct_waitVSYNC();
+   0064 CD F1 00      [17]   95 	call	_cpct_waitVSYNC
+                             96 ;src/game.c:53: draw();
+   0067 CD 70 00      [17]   97 	call	_draw
+   006A 18 F2         [12]   98 	jr	00104$
+                             99 ;src/game.c:62: void processInput(){
+                            100 ;	---------------------------------
+                            101 ; Function processInput
+                            102 ; ---------------------------------
+   006C                     103 _processInput::
+                            104 ;src/game.c:63: cpct_scanKeyboard_f();
+   006C C3 71 00      [10]  105 	jp  _cpct_scanKeyboard_f
+                            106 ;src/game.c:69: void update(){
+                            107 ;	---------------------------------
+                            108 ; Function update
+                            109 ; ---------------------------------
+   006F                     110 _update::
+                            111 ;src/game.c:82: }
+   006F C9            [10]  112 	ret
+                            113 ;src/game.c:84: void draw(){
+                            114 ;	---------------------------------
+                            115 ; Function draw
+                            116 ; ---------------------------------
+   0070                     117 _draw::
+                            118 ;src/game.c:98: }
+   0070 C9            [10]  119 	ret
+                            120 	.area _CODE
+                            121 	.area _INITIALIZER
+                            122 	.area _CABS (ABS)

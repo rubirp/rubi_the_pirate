@@ -1,26 +1,20 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
-/*
-	typedef enum {
-	   GS_ONMENU = 0,
-	   GS_ONMATCH,
-	   GS_BACK4MATCH,
+typedef enum {
+   GS_IN_MENU = 0,
+   GS_IN_GAMEPLAY,
+  // GS_BACK4MATCH,
 
-	   GS_NUMGAMESTATUS
+  // GS_NUMGAMESTATUS
 
-	} T_GameStatus;
+} T_GameStatus;
 
-	typedef struct Game{
-		u8 is_running;
-		u8 op_p1;
-		u8 op_p2;
-		u8 op_lvl;
-		u32 seed;
-		T_GameStatus status;
+typedef struct Game{
+	T_GameStatus status;
    
-	} T_Game;
-*/
+} T_Game;
+
 
 
 	//funciones principales del juego
@@ -31,6 +25,8 @@
 	void update();
 	void draw();
 
+
+	//void exit();
 
 
 

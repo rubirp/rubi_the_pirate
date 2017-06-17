@@ -15,9 +15,11 @@ Symbol Table
   0 _draw                                                          002D GR
   0 _init                                                          0015 GR
   0 _initCPC                                                       0000 GR
+  1 _myGame                                                        0000 GR
   0 _processInput                                                  0029 GR
   0 _run                                                           0018 GR
   0 _update                                                        002C GR
+
 
 ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
 Hexadecimal [16-Bits]
@@ -25,7 +27,7 @@ Hexadecimal [16-Bits]
 Area Table
 
    0 _CODE                                      size   2E   flags    0
-   1 _DATA                                      size    0   flags    0
+   1 _DATA                                      size    1   flags    0
    2 _INITIALIZED                               size    0   flags    0
    3 _DABS                                      size    0   flags    8
    4 _HOME                                      size    0   flags    0

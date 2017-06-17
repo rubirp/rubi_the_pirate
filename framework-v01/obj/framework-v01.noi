@@ -1,7 +1,6 @@
 DEF .__.ABS. 0x0
 DEF l__CABS 0x0
 DEF l__DABS 0x0
-DEF l__DATA 0x0
 DEF l__GSFINAL 0x0
 DEF l__GSINIT 0x0
 DEF l__HOME 0x0
@@ -9,14 +8,15 @@ DEF l__INITIALIZED 0x0
 DEF l__INITIALIZER 0x0
 DEF s__CABS 0x0
 DEF s__DABS 0x0
+DEF l__DATA 0x1
 DEF s__CODE 0x40
 DEF l__CODE 0xD8
 DEF s__DATA 0x118
-DEF s__GSFINAL 0x118
-DEF s__GSINIT 0x118
-DEF s__HOME 0x118
-DEF s__INITIALIZED 0x118
-DEF s__INITIALIZER 0x118
+DEF s__GSFINAL 0x119
+DEF s__GSINIT 0x119
+DEF s__HOME 0x119
+DEF s__INITIALIZED 0x119
+DEF s__INITIALIZER 0x119
 DEF _main 0x40
 DEF _initCPC 0x43
 DEF _init 0x58
@@ -36,4 +36,5 @@ DEF _cpct_removeInterruptHandler 0x107
 DEF cpct_disableFirmware_asm 0x107
 DEF cpct_removeInterruptHandler_asm 0x107
 DEF _cpct_mode_rom_status 0x117
+DEF _myGame 0x118
 LOAD obj/framework-v01.ihx
