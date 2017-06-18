@@ -8,10 +8,10 @@ typedef enum {
 
   // GS_NUMGAMESTATUS
 
-} T_GameStatus;
+} T_GameState;
 
 typedef struct Game{
-	T_GameStatus status;
+	T_GameState state;
    
 } T_Game;
 

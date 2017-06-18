@@ -53,3 +53,4 @@
 ##
 
 #$(eval $(call TMX2C,img/tilemap.tmx,g_tilemap,src/))
+$(eval $(call TMX2C,assets/prueba.tmx,g_nivel_1,src/levels/,hwpalette))
