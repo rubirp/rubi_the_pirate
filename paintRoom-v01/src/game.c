@@ -11,8 +11,13 @@
 void initCPC(); // set cpc initial settings
 
 extern void initMenu();
-extern void updateMenu();
+extern void initGameplay();
+
+extern void updateMenu(T_Game* game);
+extern void updateGameplay();
+
 extern void drawMenu();
+extern void drawGameplay();
 
 //
 // variables declaration
@@ -41,7 +46,7 @@ void initCPC(){
 void init(){
 	initCPC();
 	initMenu();
-
+	initGameplay();
 }
 
 void run(){
@@ -78,11 +83,11 @@ void update(){
 	switch(myGame.state) {
 
 		case GS_IN_MENU:
-	   		updateMenu();
+	   		updateMenu(&myGame);
 		break;
 
 		case GS_IN_GAMEPLAY:    	
-	   		//updateGameplay();
+	   		updateGameplay();
 		break;
 	}
 	
@@ -96,7 +101,7 @@ void draw(){
 		break;
 
 		case GS_IN_GAMEPLAY:    	
-	   		//drawGameplay();
+	   		drawGameplay();
 		break;
 	}
 	

@@ -6,7 +6,6 @@
 typedef enum{
 	MS_ON_MAINMENU = 0,
 	MS_ON_CREDITS,
-	MS_ON_GAMEPLAY
 
 }T_MenuState;
 

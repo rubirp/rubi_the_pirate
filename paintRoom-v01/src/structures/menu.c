@@ -1,13 +1,13 @@
 #include "menu.h"
-
-
+#include "../game.h"
 
 //
 // private functions declaration
 //
 void drawMainMenu();
 void drawCredits();
-void drawGameplay();
+
+extern void drawGameplay();
 
 
 //
@@ -35,9 +35,7 @@ void drawCredits(){
 
 }
 
-void drawGameplay(){
 
-}
 
 
 //
@@ -53,14 +51,15 @@ void initMenu(){
 
 
 
-void updateMenu(){
+void updateMenu(T_Game* game){
+	//T_GameState st = game.state;
+
 	if(cpct_isAnyKeyPressed()){
 
 		switch(myMenu.state) {
 		   	case MS_ON_MAINMENU:
 			   	if(cpct_isKeyPressed(Key_1)){
-		   			myMenu.state = MS_ON_GAMEPLAY;
-		   			myMenu.draw = 1;	
+		   			game->state = GS_IN_GAMEPLAY;
 			   	}
 			   	else if(cpct_isKeyPressed(Key_2)){
 		   			myMenu.state = MS_ON_CREDITS;
@@ -88,10 +87,6 @@ void drawMenu(){
 		    	drawMainMenu();
 		    break;
 
-		    case MS_ON_GAMEPLAY:
-		   		cpct_clearScreen(cpct_px2byteM0 (1,1));
-		    	drawGameplay();
-		    break;
 
 		    case MS_ON_CREDITS:
 		   		cpct_clearScreen(cpct_px2byteM0 (1,1));
