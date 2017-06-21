@@ -1,5 +1,5 @@
-#ifndef _MATCH_H_
-#define _MATCH_H_
+#ifndef _ROOM_H_
+#define _ROOM_H_
 
 typedef enum{
 	RS_INIT = 0,

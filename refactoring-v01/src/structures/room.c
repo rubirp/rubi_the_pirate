@@ -1,9 +1,8 @@
 #include <cpctelera.h>
 
 #include "room.h"
-
-#include "../tiles/tiles.h"
 #include "../levels/prueba.h"
+#include "../tiles/tiles.h"
 
 //
 // private functions declaration
@@ -22,10 +21,12 @@ T_Room myRoom;
 // private function definition
 //
 void drawRoom(){
-	u16 cont = 0;
+	
+	
 	u8 col = 0;
 	u8 fila = 0;
 
+	u16 cont = 0;
 	while(cont < 20 * 20){
 		
 		cpct_drawTileAligned4x8(g_tileset[g_nivel_1[cont]], cpct_getScreenPtr(CPCT_VMEM_START, col, fila));
@@ -39,6 +40,7 @@ void drawRoom(){
 		}
 		cont++;
 	}
+	
 }
 
 

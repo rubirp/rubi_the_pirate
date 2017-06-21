@@ -26,8 +26,5 @@ typedef struct Game{
 	void draw();
 
 
-	//void exit();
-
-
 
 #endif

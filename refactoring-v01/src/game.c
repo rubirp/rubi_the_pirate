@@ -1,8 +1,6 @@
 #include <cpctelera.h>
 #include "game.h"
-
-#include "tiles/tiles.h"
-
+#include "util.h"
 //
 // private functions declaration
 //
@@ -23,8 +21,9 @@ extern void drawGameplay();
 // variables declaration
 //
 
-T_Game myGame; // My Struct Game;
-//const u8 g_palette[16] = { 0x52, 0x54, 0x5c, 0x5d, 0x56, 0x46, 0x57, 0x5e, 0x40, 0x4e, 0x42, 0x53, 0x59, 0x4a, 0x43, 0x4b };
+const T_Game myGame = {
+	.state = GS_IN_MENU
+};
 
 
 //
@@ -36,6 +35,8 @@ void initCPC(){
 	cpct_setVideoMode(0);
 	cpct_setBorder(HW_BLACK);
 	cpct_setPalette(g_palette, 16);
+
+	//Aparte
 }
 
 
