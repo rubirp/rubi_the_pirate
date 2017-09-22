@@ -5,6 +5,7 @@
 extern void play_MainMenu_Scene();
 
 void initGame();
+//void playMainMenuScene();
 
 	
 void run(){
@@ -17,13 +18,8 @@ void run(){
 
 //private functions definition
 void initGame(){
-
-	__asm
-		ld c, #0x01
-		call cpct_setVideoMode_asm
-		call cpct_disableFirmware_asm
-	__endasm;
-
+	cpct_setVideoMode(1);
+	cpct_disableFirmware();
 	cpct_setBorder(HW_BLACK);
 
 }

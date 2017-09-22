@@ -1,5 +1,5 @@
 //
-// File assets/prueba.tmx converted to csv using cpct_tmx2csv [20170920 18:27:15 CEST]
+// File assets/prueba.tmx converted to csv using cpct_tmx2csv [20170629 22:22:02 CEST]
 //   * Width:  40
 //   * Height: 25
 //   * Bytes:  1000 
