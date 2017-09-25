@@ -5,6 +5,7 @@
 extern void play_MainMenu_Scene();
 
 void initGame();
+
 	
 void run(){
 	initGame();

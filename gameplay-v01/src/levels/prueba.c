@@ -1,5 +1,5 @@
 //
-// File assets/prueba.tmx converted to csv using cpct_tmx2csv [20170922 20:37:10 CEST]
+// File assets/prueba.tmx converted to csv using cpct_tmx2csv [20170925 10:50:33 CEST]
 //   * Width:  40 columns (40 bytes, 8 bits per column)
 //   * Height: 25 rows
 //   * Bytes:  1000 bytes (40 x 25)
