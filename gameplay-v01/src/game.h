@@ -5,7 +5,7 @@ typedef enum SceneIndex
 {
 	SI_MAINMENU = 0,
 	SI_CREDITS,
-	SI_WORLD_1,
+	SI_STAGE
 
 }T_SceneIndex;
 
@@ -14,7 +14,7 @@ typedef enum SceneState
 {
 	SS_ENTER = 0,
 	SS_IN,
-	SS_EXIT,
+	SS_EXIT
 
 }T_SceneState;
 

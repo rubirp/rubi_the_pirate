@@ -59,10 +59,7 @@
 # PALETTE={0 1 3 4 7 9 10 12 13 16 19 20 21 24 25 26}
 
 GREY_PALETTE	={0 26 13 25}
-BLUE_PALETTE	={0 26 2 11}
-GREEN_PALETTE	={0 26 18 19}
-YELLOW_PALETTE	={0 26 15 24}
-RED_PALETTE		={0 26 6 7}
+PALETTE 		={7 0 1 2 3 6 12 13 14 15 16 17 18 24 25 26}
 
 ## Example image conversion
 ##    This example would convert img/example.png into src/example.{c|h} files.
@@ -74,4 +71,8 @@ RED_PALETTE		={0 26 6 7}
 
 #$(eval $(call IMG2SPRITES,img/example.png,0,pre,24,12,$(PALETTE),mask,src/,hwpalette))
 
-$(eval $(call IMG2SPRITES,assets/tiles.png,1,g,8,8,$(BLUE_PALETTE),tileset,src/tiles/,))
+#$(eval $(call IMG2SPRITES,assets/tiles.png,1,g,8,8,$(BLUE_PALETTE),tileset,src/tiles/,))
+$(eval $(call IMG2SPRITES,assets/tiles/tileset.png,0,g,8,8,$(PALETTE),tileset,src/tiles/,))
+
+
+$(eval $(call IMG2SPRITES,assets/characters/player.png,0,g,8,8,$(PALETTE),,src/characters,))

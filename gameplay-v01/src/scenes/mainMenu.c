@@ -8,28 +8,30 @@
 
 T_Scene mainMenu_Scene;
 
-extern void play_World_1_Scene();
+extern void play_Stage_Scene();
 extern void play_Credits_Scene();
 
-void init_MainMenu_Scene();
-void update_MainMenu_Scene();
-void draw_MainMenu_Scene();
 
 
+
+//
+// main scene functions
+//
 void play_MainMenu_Scene(){
 	
 	//ENTER SCENE
 	init_MainMenu_Scene();
 
 	//IN SCENE
-	while(mainMenu_Scene.state == SS_IN){
+	while(mainMenu_Scene.state == SS_IN)
+	{
 		cpct_scanKeyboard_f();
 		update_MainMenu_Scene();
 	}
 
 	//EXIT SCENE
-	if(mainMenu_Scene.index == SI_WORLD_1) 	play_World_1_Scene();
-	else 									play_Credits_Scene();
+	if(mainMenu_Scene.index == SI_STAGE) play_Stage_Scene();
+	else 								 play_Credits_Scene();
 	
 }
 
@@ -39,15 +41,15 @@ void play_MainMenu_Scene(){
 
 void init_MainMenu_Scene(){
 	
-	
+	mainMenu_Scene.index = SI_MAINMENU;
+	mainMenu_Scene.state = SS_IN;
+
 	cpct_setPalette(g_grey_palette, 4);
-
-
 	cpct_clearScreen(0x00);
 	draw_MainMenu_Scene();
 
-	mainMenu_Scene.index = SI_MAINMENU;
-	mainMenu_Scene.state = SS_IN;
+	
+	
 
 }
 
@@ -55,7 +57,7 @@ void update_MainMenu_Scene(){
 	if(cpct_isAnyKeyPressed()){
 
 	   	if(cpct_isKeyPressed(Key_1)){
-	   		mainMenu_Scene.index = SI_WORLD_1;
+	   		mainMenu_Scene.index = SI_STAGE;
    			mainMenu_Scene.state = SS_EXIT;
 
 	   	}
