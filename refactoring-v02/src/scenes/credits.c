@@ -21,7 +21,7 @@ void play_Credits_Scene(){
 	//IN SCENE
 	while(credits_Scene.state == SS_IN)
 	{
-		cpct_scanKeyboard();
+		cpct_scanKeyboard_f();
 		update_Credits_Scene();
 	}
 

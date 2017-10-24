@@ -1,0 +1,163 @@
+﻿{
+  "$type": "RGAS.PlatformProviders.AmstradSpriteSet, RGAS",
+  "PlusInks": {
+    "$type": "System.UInt16[], mscorlib",
+    "$values": [
+      255,
+      0,
+      1092,
+      240,
+      2032,
+      3568,
+      4000,
+      3920,
+      3842,
+      3849,
+      3855,
+      2575,
+      527,
+      95,
+      175,
+      4095
+    ]
+  },
+  "_ImageList": {
+    "$type": "System.Collections.Generic.List`1[[RGAS.SpriteBase, RGAS]], mscorlib",
+    "$values": [
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AA8PBQ8PAAAPDw8PDwAACgEKAQoABQ8PDw8PBQ8FBQUFBQ8KDw8FDw8KAA8PDw8PAAABAQABAQAA"
+        },
+        "Width": 7,
+        "Height": 8,
+        "_guid": "a788db02-fbe6-4511-a8d2-581e3ac0e5a2",
+        "_name": "enfermero_idle_1",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AA8PBQ8PAAAPDw8PDwAACgEKAQoAAAoKBQoKAAUPDw8PDwUPBQUFBQUPCg8PBQ8PCgABAQABAQAA"
+        },
+        "Width": 7,
+        "Height": 8,
+        "_guid": "a933966d-5f98-4721-b600-b6c12ef6487d",
+        "_name": "enfermero_idle_2",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAAAAAAAAAAPDwUPDwAADw8PDw8AAAoBCgEKAAAKCgUKCgAFDw8PDw8FDwUFBQUFDwoPDwUPDwoA"
+        },
+        "Width": 7,
+        "Height": 8,
+        "_guid": "46b17a55-7621-47d9-8cc4-0182b6246b1f",
+        "_name": "enfermero_idle_3",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AA8PDwUPAA8PDw8PAAoKAQoBAAoKCgUKBQ8PDw8PDwUFBQUFCgAPDwUPAAABAAABAA=="
+        },
+        "Width": 6,
+        "Height": 8,
+        "_guid": "8743ba3c-68a1-4b45-b7b0-1f7900878c0f",
+        "_name": "enfermero_walkRL_1",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "Dw8PBQ8PDw8PDwoKAQoBCgoKBQoFDw8PBQ8FBQUPCg8FDwoAAQABAAA="
+        },
+        "Width": 5,
+        "Height": 8,
+        "_guid": "a8bf7a3c-32d9-45bc-805e-94c9fb9aa2c6",
+        "_name": "enfermero_walkRL_2",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AA8FBQUPAAAPDwUPDwAACgoKCgoAAAoKCgoKAAUPDw8PDwUPBQUFBQUPAA8PBQ8PCgABAQAAAAAA"
+        },
+        "Width": 7,
+        "Height": 8,
+        "_guid": "50de7f90-fd7a-4490-babe-dff7f782332c",
+        "_name": "enfermero_walkU",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AA8PBQ8PAAAPDw8PDwAACgEKAQoAAAoKBQoKAAUPDw8PDwUPBQUFBQUPAA8PBQ8PCgABAQAAAAAA"
+        },
+        "Width": 7,
+        "Height": 8,
+        "_guid": "9ca20db9-982a-4b5f-9ade-15e518be2377",
+        "_name": "enfermero_walkD",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      }
+    ]
+  },
+  "_levelList": {
+    "$type": "System.Collections.Generic.List`1[[RGAS.GameLevel, RGAS]], mscorlib",
+    "$values": []
+  },
+  "_sound": {
+    "$type": "RGAS.SoundSet, RGAS",
+    "MusicList": {
+      "$type": "System.Collections.Generic.List`1[[RGAS.AYMusic, RGAS]], mscorlib",
+      "$values": []
+    }
+  },
+  "Mode": 0,
+  "_targetPlatform": 0,
+  "Inks": {
+    "$type": "System.Byte[], mscorlib",
+    "$value": "DQABAgMGDAcODxAREhgZGg=="
+  },
+  "_formatterType": "RGAS.PlatformProviders.AmstradSpriteSet+AmstradCPCRSLibCArrayFormatter, RGAS, Version=1.2.5.0, Culture=neutral, PublicKeyToken=null",
+  "OSPlatform": "Microsoft Windows NT 6.2.9200.0 C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\",
+  "RGASVersion": "1.2.5.0",
+  "EncodeLevelsRLE": false,
+  "OutputSpriteDimensions": false
+}

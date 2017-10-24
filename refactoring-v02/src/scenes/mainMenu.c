@@ -6,13 +6,11 @@
 
 
 
-T_Scene mainMenu_Scene;
-
 extern void play_Stage_Scene();
 extern void play_Credits_Scene();
 
 
-
+T_Scene mainMenu_Scene;
 
 //
 // main scene functions
@@ -25,7 +23,7 @@ void play_MainMenu_Scene(){
 	//IN SCENE
 	while(mainMenu_Scene.state == SS_IN)
 	{
-		cpct_scanKeyboard();
+		cpct_scanKeyboard_f();
 		update_MainMenu_Scene();
 	}
 
@@ -45,15 +43,13 @@ void init_MainMenu_Scene(){
 	mainMenu_Scene.state = SS_IN;
 
 	cpct_setPalette(g_grey_palette, 4);
-	cpct_clearScreen(0x00);
+	cpct_clearScreen(0);
 	draw_MainMenu_Scene();
-
-	
-	
 
 }
 
 void update_MainMenu_Scene(){
+
 	if(cpct_isAnyKeyPressed()){
 
 	   	if(cpct_isKeyPressed(Key_1)){

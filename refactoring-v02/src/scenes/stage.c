@@ -10,12 +10,15 @@
 #include "../structures/entities.h"
 
 
-// Varaibles & Structures
-T_Scene stage_Scene;
 
 
 
 extern void play_MainMenu_Scene();
+
+
+
+// Varaibles & Structures
+T_Scene stage_Scene;
 
 
 
