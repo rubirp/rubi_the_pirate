@@ -1,0 +1,195 @@
+﻿{
+  "$type": "RGAS.PlatformProviders.AmstradSpriteSet, RGAS",
+  "PlusInks": {
+    "$type": "System.UInt16[], mscorlib",
+    "$values": [
+      255,
+      0,
+      1092,
+      240,
+      2032,
+      3568,
+      4000,
+      3920,
+      3842,
+      3849,
+      3855,
+      2575,
+      527,
+      95,
+      175,
+      4095
+    ]
+  },
+  "_ImageList": {
+    "$type": "System.Collections.Generic.List`1[[RGAS.SpriteBase, RGAS]], mscorlib",
+    "$values": [
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAUFBQAFBQAFBQ8PDw8PDw8FDw8PBQUFDw8PBQ8PBQ8PDwUA"
+        },
+        "Width": 5,
+        "Height": 7,
+        "_guid": "575f86b1-baf4-4161-ada5-f2a4e8717b7e",
+        "_name": "botiquin",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAABAAAAAAEAAAAAAQAAAAANAAAADQ0NAA0NDQ0NBAQEBAQBAQEBAQA="
+        },
+        "Width": 5,
+        "Height": 8,
+        "_guid": "d20ab975-0046-41cb-8b03-956e407e9058",
+        "_name": "escoba",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAEAAAAAAAEOAQAAAAABDgEBAQEBAQEBDg4OAQEOAQEBAQEBDgEAAQABAAEAAAAAAAA="
+        },
+        "Width": 7,
+        "Height": 7,
+        "_guid": "15164183-9fe4-4e8d-9df2-e0a736fdd01f",
+        "_name": "llave",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AQABAQEBAQUAAQEPDw8BBQABAQEBAQEAAQYBBQABAAABBgYBAQAAAAEGBgEAAAAAAQYBAAAAAAABAQAAAAAAAAA="
+        },
+        "Width": 8,
+        "Height": 8,
+        "_guid": "8abe9d58-6694-4426-ba68-26161c1434fb",
+        "_name": "pistola",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAABAAAAAAABAQEBAQEBAQEBAQ8PDwEAAQEBDw8BAAABAAEBAQAAAAAAAQAAAAAAAA=="
+        },
+        "Width": 8,
+        "Height": 6,
+        "_guid": "9a940c2d-b7c5-417d-ac96-7cff9b4fa886",
+        "_name": "cuchillo",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAABAQEAAAABDQ0NAQABDQ8PCQ0BAQ0PDgkNAQENDwkJDQEAAQ0NDQEAAAABAQEAAAA="
+        },
+        "Width": 7,
+        "Height": 7,
+        "_guid": "e49bbcab-cbca-44a8-b05f-0542e528c1a3",
+        "_name": "dinero",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAEBAAEBAAEPDwEFBQEBDwUFBQUBAQUFBQUFAQABBQUFAQAAAAEFAQAAAAAAAQAAAAA="
+        },
+        "Width": 7,
+        "Height": 7,
+        "_guid": "acfaf76b-4a58-468c-8ae6-21785261ef54",
+        "_name": "corazon_1",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AAEBAAEBAAEPDwEPDwEBDw8PDw8BAQ8PDw8PAQABDw8PAQAAAAEPAQAAAAAAAQAAAAA="
+        },
+        "Width": 7,
+        "Height": 7,
+        "_guid": "acfaf76b-4a58-468c-8ae6-21785261ef54",
+        "_name": "corazon_2",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      },
+      {
+        "$type": "RGAS.CPCSprite, RGAS",
+        "Align256": false,
+        "GenerateVerticalMirror": false,
+        "GenerateHorizontalMirror": false,
+        "pixels": {
+          "$type": "System.Byte[], mscorlib",
+          "$value": "AQAAAAAAAQABAQEBBQUBBQABBgENDQEFAQYGAQEBAQABBgYFAAEAAAEGAQEBAAAAAQEBAAAAAAABAQAAAAAAAAA="
+        },
+        "Width": 8,
+        "Height": 8,
+        "_guid": "19b5cc53-48cc-496a-9a98-aa1f43ee66be",
+        "_name": "pistola",
+        "MaskDataInline": false,
+        "UseInLevelDesigner": false
+      }
+    ]
+  },
+  "_levelList": {
+    "$type": "System.Collections.Generic.List`1[[RGAS.GameLevel, RGAS]], mscorlib",
+    "$values": []
+  },
+  "_sound": {
+    "$type": "RGAS.SoundSet, RGAS",
+    "MusicList": {
+      "$type": "System.Collections.Generic.List`1[[RGAS.AYMusic, RGAS]], mscorlib",
+      "$values": []
+    }
+  },
+  "Mode": 0,
+  "_targetPlatform": 0,
+  "Inks": {
+    "$type": "System.Byte[], mscorlib",
+    "$value": "DQABAgMGDAcODxAREhgZGg=="
+  },
+  "_formatterType": "RGAS.PlatformProviders.AmstradSpriteSet+AmstradCPCRSLibCArrayFormatter, RGAS, Version=1.2.5.0, Culture=neutral, PublicKeyToken=null",
+  "OSPlatform": "Microsoft Windows NT 6.2.9200.0 C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\",
+  "RGASVersion": "1.2.5.0",
+  "EncodeLevelsRLE": false,
+  "OutputSpriteDimensions": false
+}
